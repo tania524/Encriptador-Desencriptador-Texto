@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button#encryptButton {
+    background-color: #4caf50;
+    color: white;
+}
+
+button#encryptButton:hover {
+    background-color: #45a049;
+}
+
+button#decryptButton {
+    background-color: #f44336;
+    color: white;
+}
+
+button#decryptButton:hover {
+    background-color: #e53935;
+}
+
+button#copyButton {
+    background-color: #008cba;
+    color: white;
+}
+
+button#copyButton:hover {
+    background-color: #007bb5;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    text-decoration: underline;
+    
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        margin: 10px;
+        width: auto;
+    }
+}
+
+.Informacion {
+    color: #495057;
+    font-size: 18px;
+}
